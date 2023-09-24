@@ -1,0 +1,304 @@
+<style>
+
+*{box-sizing: border-box;}
+
+body {
+  font-family: Arial;
+  padding: 5px;
+  background: #4E495B;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* HEADER TITLE */
+.header {
+  padding: 140px;
+  text-align: center;
+  background-Image: url(BGimage.png);
+  background-size: 100%;
+}
+
+.header h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+
+.header p {
+  font-size: 1.2em;
+  line-height: 80%;
+  text-align: center;
+  color: #D5D2DA;
+  text-shadow: black 0 2px;
+  letter-spacing: .5px;
+}
+
+/* NAVIGATION BAR */
+.topnav {
+  overflow: hidden;
+  background-color: #44404F;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 98.2%; /* Full width */
+}
+
+/* syle navigation bar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* change color when hovering */
+.topnav a:hover {
+  background-color: PaleGoldenRod;
+  color: #4E495B;
+}
+
+
+/* line separator between header & page */
+.headerborder {
+  padding: 10px;
+  text-align: center;
+  background-color: PaleGoldenRod;
+  background-size: 100%;
+}
+
+.headerborder2 {
+  margin-left: auto;
+  margin-right: auto;
+  height: 10px;
+  width: 120px;
+  background-color: #77678E;
+}
+
+/* WELCOME MESSAGE */
+.description {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 140px;
+  background-color: #BFBCC8;
+}
+
+.description p {
+  text-align: center;
+  line-height: 1.6;
+  color: #4E495A;
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/* FLOATING COLUMNS: VIDEO */
+/* left column: VIDEO */
+.leftcolumn {
+  float: left;
+  width: 55%;
+  background-color: #4E495B;
+  padding-left: 100px
+}
+
+.leftcolumn p {
+  font-family: Helvetica;
+  font-size: 18px;
+  text-align: justify;
+  color: #F1E9DA;
+  line-height: 1.6;
+}
+
+/* right column: VIDEO */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 2;
+  background-color: #4E495B;
+  padding-right: 100px
+}
+
+.rightcolumn p {
+  color:#D5D2DA;
+  margin-right: 13px;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: .5px;
+}
+
+/* FLOATING COLUMNS: TIPS & TRICKS */
+/* title: TIPS & TRICKS */
+.longrow {
+  float: center;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.longrow h1 {
+  font-family: Helvetica;
+  text-align: center;
+  color: PaleGoldenRod;
+}
+
+
+/* TABLE: TIPS & TRICKS */
+table {
+  width: 96%;
+  padding-left: 100px
+}
+
+table h2 {
+  color: #D5C3D2;
+}
+
+table p {
+  color: ghostWhite;
+  line-height: 1.6;
+}
+
+
+/* Card text box */
+.card {
+  background-color: #4E495B;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* FLOATING COLUMNS: IKIGAI */
+/* left column: IKIGAI */
+.ikigaitxt {
+float: left;
+width: 45%;
+background-color: #4E495B;
+padding-left: 100px
+}
+
+.ikigaitxt p {
+font-family: Helvetica;
+font-size: 18px;
+text-align: justify;
+color: ghostWhite;
+line-height: 1.6;
+
+}
+
+.ikigaitxt h1 {
+font-family: Helvetica;
+text-align: justify;
+color: PaleGoldenRod;
+line-height: 1.6;
+
+}
+
+/* right column: IKIGAI */
+.ikigai {
+float: left;
+width: 40%;
+padding-left: 2;
+background-color: #4E495B;
+padding-right: 100px
+}
+
+.ikigai p {
+  color:#D5D2DA;
+  margin-right: 13px;
+  font-size: 10px;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: .5px;
+}
+
+/* Resources */
+.resources {
+  float: center;
+  width: 100%;
+  padding-left: 2;
+  background-color: #4E495B;
+  padding-right: 100px
+}
+
+.resources h1{
+  font-family: Helvetica;
+  text-align: center;
+  color: PaleGoldenRod;
+  line-height: 1.6;
+}
+
+/* POP-UP SCREEN: video */
+  /* background */
+  .modal {
+    display: none; /* default */
+    position: fixed; /* stay put */
+    z-index: 1; /* stay up */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  /* content */
+  .modal-content {
+    background-color: PaleGoldenRod;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 65%;
+  }
+
+  .modal-content p {
+    color: #4E495A;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .modal-content h2 {
+    color: #4E495A;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  /* close button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+
+</style>

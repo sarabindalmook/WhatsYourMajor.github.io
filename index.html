@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<!--  Link to css file -->
+<head>
+<link rel="stylesheet" type="text/css" href="Main.css">
+</head>
+
+
+<!--  Navigation Bar -->
+<body>
+<div class="topnav">
+  <a href="Main.html">Home</a>
+  <a href="#video">Video</a>
+  <a href="#tips">Tips & Tricks</a>
+  <a href="#resources">Resources</a>
+</div>
+
+
+<!--  Homepage title -->
+<div class="header">
+  <h1 contenteditable>What's Your Major?</h1>
+  <p>Find Your <b>Passion</b>, Choose Your <b>Major</b>, and Shape Your <b>Future!</b></p>
+</div>
+
+
+<!-- Border separator between title and page -->
+<div class="headerborder"></div><br><br>
+
+
+<!-- Welcome Message -->
+<div class="description">
+  <p><b>Welcome, you're in the right place! </b><br>Choosing the perfect major for your university journey is an important decision, and it's not always easy. <br>At our website, we understand the challenges that come with this choice. We're here to provide you with guidance, insights, and resources that will help you explore your options, discover your passions, and make an informed decision about your academic path.</p>
+</div>
+<div class="headerborder2"></div>
+
+
+<!-- Video Section -->
+<br><br><br>
+<div class="row" id="video">
+
+  <!-- Left Video Section -->
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="color:PaleGoldenRod;" style="font-size: 50px;">You Are Not Alone!</h1>
+      <iframe width="660" height="345" src="https://www.youtube.com/embed/CeLmiPTZvZI"></iframe>
+    </div>
+  </div>
+
+  <!--  Right Video Section -->
+  <div class="rightcolumn">
+    <div class="card">
+      <br><br><br>
+      <h2 style="color: #D5C3D2;">The Real Deal-lemma</h2>
+      <p>Get ready to laugh and relate in our class project skit, 'What’s Your Major? Dilemma'! Discover the inspiration behind our website as we take you on a comedic journey through the ups and downs of choosing a major in this relatable & fun video.</p>
+
+      <!-- create button & popup screen -->
+      <button id="myBtn">Learn More</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <!-- Display contents of popup screen -->
+          <h2>Meet the dedicated team who brought this class project to life!</h2>
+          <br>
+          <img src="gallery1.png" alt="gallery1" width="280" height="190" style="border:3px solid #4E495A">
+          <img src="gallery6.png" alt="gallery2" width="280" height="190" style="border:3px solid #4E495A">
+          <img src="gallery3.png" alt="gallery3" width="280" height="190" style="border:3px solid #4E495A">
+          <br>
+          <img src="gallery4.png" alt="gallery1" width="280" height="190" style="border:3px solid #4E495A">
+          <img src="gallery5.png" alt="gallery2" width="280" height="190" style="border:3px solid #4E495A">
+          <img src="gallery2.png" alt="gallery3" width="280" height="190" style="border:3px solid #4E495A">
+          <p>Explore behind-the-scenes snapshots capturing the moments of laughter, inspiration, and collaboration that fueled our creative process. From initial concept to final cut, join us as we unravel the story behind this entertaining video, offering you a glimpse into the dedication, challenges, and camaraderie that made it all possible.</p>
+          <p style="font-size:14px;"">Credits: Alreem AlAbbas, Darko Skulic, Diana Alibekova, Sara Al Mehairi</p>
+        </div>
+      </div>
+
+      <!-- Javascript button -->
+      <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function()
+      {
+        modal.style.display = "block";}
+      span.onclick = function() {
+        modal.style.display = "none";}
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";}
+        }
+      </script>
+    </div>
+  </div>
+    <img src="STARSimage.png" alt="stars" width="300" height="150" align=right>
+</div>
+
+<!-- Tips & Tricks Section -->
+<!-- 1. Things to Consider Subsection -->
+<br><br>
+<div class="longrow" id="tips">
+  <div class="card">
+    <h1>Things to Consider</h1>
+  </div>
+
+  <!-- Create table -->
+  <table>
+    <!-- First Row -->
+    <tr>
+      <td>
+        <h2>1. What Are Your Biggest Priorities?</h2>
+        <p style="padding-right: 100px;">Before you choose a major, think about which of these three factors — economic advantage, interest level, and ability — are most important and relevant to you and your goals.</p>
+      </td>
+
+      <td>
+        <h2>2. What Are You Interested In?</h2>
+        <p style="padding-right: 100px;">You can also explore potential areas of study and career paths by joining student clubs, volunteering, working a part-time job on campus, managing a side hustle, or completing an internship.</p>
+      </td>
+    </tr>
+
+    <!-- Second Row -->
+    <tr>
+      <td>
+        <br>
+        <h2>3. What Are You Good At?</h2>
+        <p style="padding-right: 100px;">One way to determine which academic fields best suit you is to take a close look at your high school grades and your ACT or SAT scores. Doing this can highlight your strengths in specific academic areas.</p>
+      </td>
+
+      <td>
+        <h2>4. What Are the Highest-Paying Fields?</h2>
+        <p style="padding-right: 100px;">If you want a job outside health and medicine, positions with high salaries include chief executive, physicist, computer and information systems manager, and architectural and engineering manager.</p>
+      </td>
+    </tr>
+
+    <!-- Third Row -->
+    <tr>
+      <td>
+        <br>
+        <h2>5. How Rigorous Will the Coursework Be?</h2>
+        <p style="padding-right: 100px;">Some majors may feel harder than others due to factors like the heaviness of homework loads, course expectations, and the frequency of exams. Before you declare a major, make sure you understand how rigorous your weekly workload will be.</p>
+      </td>
+
+      <td>
+        <h2>6. What Does Your Academic Advisor Say?</h2>
+        <p style="padding-right: 100px;">Your advisor has likely had similar conversations with hundreds of students and can provide insight into picking a major. They may even propose a major you hadn't previously considered that meets your academic and career goals.</p>
+      </td>
+    </tr>
+  </table>
+  <br><p style="text-align: center; color: #6EA4BF;">source: https://www.bestcolleges.com/resources/choosing-a-major/</p>
+
+
+<!-- 2. What's Your Purpose? Subsection -->
+<br>
+  <!-- Text -->
+  <div class="ikigaitxt">
+    <div class="card"><br><br>
+    <h1>What's Your Purpose?</h1>
+        <br><p><b>Ikigai, a Japanese concept, is the heart of our approach. It combines 'iki' (life) and 'gai' (value or worth) and represents the intersection of four fundamental aspects of your existence:</b><br>
+
+      <br>1. What You Love<br>
+      2. What You're Good At<br>
+      3. What the World Needs<br>
+      4. What You Can Be Paid For<br>
+      <br>As you embark on your academic journey, we encourage you to start by exploring your Ikigai. By understanding these core elements of your life, you'll be better equipped to make major decisions like choosing your college major.</p>
+    </div>
+  </div>
+  <!-- Image -->
+  <div class="ikigai">
+    <div class="card">
+    <img src="IKIGAIimage.png" alt="ikigai" width="500" height="700">
+    </div>
+  </div>
+
+<!-- Resources Section -->
+<div class="resources">
+  <div class="Card">
+  <table>
+    <!-- First col -->
+    <tr>
+      <td>
+        <h2 style="padding-right: 50px; text-align: center; color: PaleGoldenRod"">Academic Resource Center</h2>
+        <p style="padding-right: 50px; text-align: center;">Academic advising, Academic planning, Peer tutoring, Programs, events, and more! <br><a href="https://students.nyuad.nyu.edu/academics/academic-resources/" style="color: ghostWhite ">Learn More</a></p>
+        <p style="padding-right: 50px; text-align: center;">Campus Center, Level 2, E203-228<br><a href="mailto:nyuad.arc@nyu.edu" style="color: #6EA4BF">nyuad.arc@nyu.edu</a></p>
+      </td>
+    <!-- Second col -->
+      <td>
+        <h2 style="padding-right: 50px; text-align: center; color: PaleGoldenRod"">Career Development</h2>
+        <p style="padding-right: 50px; text-align: center;">Career Communities, Exploring Interests, Jobs, Internships, Experiences, and more! <br><a href="https://students.nyuad.nyu.edu/student-affairs/career-development/" style="color: ghostWhite ">Learn More</a></p>
+        <p style="padding-right: 50px; text-align: center;">Campus Center, Ground Floor<br><a href="mailto:nyuad.career@nyu.edu" style="color: #6EA4BF">nyuad.career@nyu.edu</a></p>
+      </td>
+    <!-- Third col -->
+      <td id="resources">
+        <h2 style="padding-right: 50px; text-align: center; color: PaleGoldenRod"">Registrar</h2>
+        <p style="padding-right: 50px; text-align: center;">Academic Policies, registeration information, Forms, Transcripts, and more! <br><a href="https://students.nyuad.nyu.edu/academics/registration/" style="color: ghostWhite ">Learn More</a></p>
+        <p style="padding-right: 50px; text-align: center;">Campus Center, Ground Floor, E041 <br><a href="mailto:nyuad.registrar@nyu.edu" style="color: #6EA4BF ">nyuad.registrar@nyu.edu</a></p>
+
+      </td>
+    </tr>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<!-- The End, Thank You :) -->
